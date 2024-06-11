@@ -40,14 +40,14 @@
 	<h1
 		on:click|self={() => {
 			$mode = ($mode + 1) % modeData.modes.length;
-			toaster.pop(modeData.modes[$mode].name);
+			// toaster.pop(modeData.modes[$mode].name);
 		}}
 		on:contextmenu|preventDefault|self={() => {
 			$mode = ($mode - 1 + modeData.modes.length) % modeData.modes.length;
 			toaster.pop(modeData.modes[$mode].name);
 		}}
 	>
-		wordle+
+		WWWordle
 	</h1>
 	<div class="icons">
 		{#if showStats}
